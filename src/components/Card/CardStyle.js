@@ -5,6 +5,7 @@ const CardStyle = styled.div`
     background-color: #fff;
     border-radius: 30px;
     padding: 7px;
+    width: 100%;
 `
 
 export default CardStyle;

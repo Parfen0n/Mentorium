@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 const BackgroundBlockStyle = styled.div`
-    width: 1400px;
-    height: 1800px;
+    width: 1300px;
+    height: 2500px;
     background-color: #4A83FF;
     border-radius: 300px;
     transform: rotate(60deg);

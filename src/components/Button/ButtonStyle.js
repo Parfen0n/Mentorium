@@ -21,9 +21,7 @@ const ButtonStyle = styled.div`
 
     :hover {
         box-shadow: 0px 4px 10px -8px rgba(0,0,0,0.75);
-        transform: scale(1.03);
-        -webkit-transform: scale(1.03);
-         -ms-transform: scale(1.03);
+        transform: translateY(-3px);
          transition: all 0.5s;
     }
 

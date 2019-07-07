@@ -16,8 +16,8 @@ export default class Home extends Component {
     render () {
         return (
             <>
-                <BackgroundBlock top={500} left={-80} lightBlue/>
-                <BackgroundBlock top={-300} left={900}/>
+                <BackgroundBlock top={400} left={-200} lightBlue/>
+                <BackgroundBlock top={-800} left={800}/>
                 <Header />
                 <Container direction='column' margin={['12%', 0, 0, '50%']}>
                     <Text bold nowrap inverted large>Мы поможем найти твой ВУЗ мечты</Text>
@@ -36,19 +36,32 @@ export default class Home extends Component {
                     </Container>
                 </Container>
                 <Container justifyContent='space-around' padding={['500px', '100px', '50px', '100px']}>
+                    <Container height='600px' width='450px'>
                         <Card>
-                            <Container height='500px' width='350px'>
+                            <Container height='600px' width='450px'>
 
                             </Container>
                         </Card>
+                    </Container>
+                    <Container height='600px' width='450px'>
                         <Card>
-                            <Container height='500px' width='350px'>
+                            <Container height='600px' width='450px'>
 
                             </Container>
                         </Card>
+                    </Container>
+                    <Container height='600px' width='450px'>
                         <Card>
-                            <Container height='500px' width='350px'>
-    
+                            <Container height='600px' width='450px'>
+
+                            </Container>
+                        </Card>
+                    </Container>
+                </Container>
+                <Container justifyContent='space-around' padding={['300px', '100px', '50px', '100px']}>
+                        <Card>
+                            <Container height='500px' width='1300px'>
+
                             </Container>
                         </Card>
                 </Container>
