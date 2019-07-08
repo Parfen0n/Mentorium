@@ -61,6 +61,12 @@ const TextStyle = styled.p`
             text-transform: uppercase;
         `
     }
+
+    ${props => props.alignCenter && 
+        `
+            text-align: center;
+        `
+    }
 `
 
 export default TextStyle;

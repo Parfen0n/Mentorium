@@ -6,6 +6,11 @@ import Text from '../../components/Text/Text';
 import Container from '../../components/Container/Container';
 import Button from '../../components/Button/Button';
 import Card from '../../components/Card/Card';
+import Image from '../../components/Image/Image';
+
+import BuildingImg from '../../assets/building.png'
+import ClockImg from '../../assets/clock.png'
+import GoalImg from '../../assets/goal.png'
 
 
 
@@ -36,23 +41,23 @@ export default class Home extends Component {
                     </Container>
                 </Container>
                 <Container justifyContent='space-around' padding={['500px', '100px', '50px', '100px']}>
-                    <Container height='600px' width='450px'>
+                    <Container height='600px' width='30%'>
                         <Card>
-                            <Container height='600px' width='450px'>
+                            <Container height='600px' width='100%'>
 
                             </Container>
                         </Card>
                     </Container>
-                    <Container height='600px' width='450px'>
+                    <Container height='600px' width='30%'>
                         <Card>
-                            <Container height='600px' width='450px'>
+                            <Container height='600px' width='100%'>
 
                             </Container>
                         </Card>
                     </Container>
-                    <Container height='600px' width='450px'>
+                    <Container height='600px' width='30%'>
                         <Card>
-                            <Container height='600px' width='450px'>
+                            <Container height='600px' width='100%'>
 
                             </Container>
                         </Card>
@@ -60,8 +65,51 @@ export default class Home extends Component {
                 </Container>
                 <Container justifyContent='space-around' padding={['300px', '100px', '50px', '100px']}>
                         <Card>
-                            <Container height='500px' width='1300px'>
-
+                            <Container direction='column' padding={['30px', '30px', '30px', '30px']}>
+                                <Container justifyContent='center'>
+                                    <Text big bold>Чем профориентация в Mentorium лучше?</Text>
+                                </Container>
+                                <Container  margin={['30px', '0', '0', '0']} direction='row' justifyContent='space-around'>
+                                    <Container align='center' direction='column' height='350px'>
+                                        <Image size='150px' src={GoalImg} />
+                                        <Container margin={['15px', 0, 0, 0]}>
+                                            <Text bold>
+                                                Высокая точность и глубина
+                                            </Text>
+                                        </Container>
+                                        <Container width='65%' margin={['10px', 0, 0, 0]}>
+                                            <Text alignCenter>
+                                                Экзистенциальный подход в выборе профессии и научный инструментарий психологической диагностики
+                                            </Text>
+                                        </Container>
+                                    </Container>
+                                    <Container align='center' direction='column' height='350px'>
+                                        <Image size='150px' src={ClockImg} />
+                                        <Container margin={['15px', 0, 0, 0]}>
+                                            <Text bold>
+                                                Любое удобное время для вас
+                                            </Text>
+                                        </Container>
+                                        <Container width='65%' margin={['10px', 0, 0, 0]}>
+                                            <Text alignCenter>
+                                                Персональный подход для каждого пользователя при выборе времени консультации
+                                            </Text>
+                                        </Container>
+                                    </Container>
+                                    <Container align='center' direction='column' height='350px'>
+                                        <Image size='150px' src={BuildingImg} />
+                                        <Container margin={['15px', 0, 0, 0]}>
+                                            <Text bold>
+                                                Большой каталог ВУЗов
+                                            </Text>
+                                        </Container>
+                                        <Container width='65%' margin={['10px', 0, 0, 0]}>
+                                            <Text alignCenter>
+                                                Большой список ВУЗов с подробной информацией, где Вы смодеже найти подходящий для себя
+                                           </Text>
+                                        </Container>
+                                    </Container>
+                                </Container>
                             </Container>
                         </Card>
                 </Container>
