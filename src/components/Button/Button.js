@@ -6,6 +6,8 @@ import ButtonStyle from './ButtonStyle.js'
 Button.propTypes = {
     children: PropTypes.node,
     primary: PropTypes.bool, 
+    big: PropTypes.bool, 
+
 }
 
 Button.defaultProps = {
@@ -13,11 +15,11 @@ Button.defaultProps = {
 }
 
 export default  function Button({
-    children, primary
+    children, primary, big
 }) {
 
   return (
-    <ButtonStyle primary={primary}>
+    <ButtonStyle primary={primary} big={big}>
         { children }
     </ButtonStyle>
   );

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const TextStyle = styled.p`
-    color: #484d54;
+    color: #34383d;
     font-size: 18px;
     line-height: 27px;
 
@@ -46,7 +46,7 @@ const TextStyle = styled.p`
 
     ${props => props.secondary && 
         `
-        color: #979ba1;
+        color: #898f96;
         `
     }
 

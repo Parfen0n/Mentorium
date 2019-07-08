@@ -7,21 +7,25 @@ BackgroundBlock.propTypes = {
     children: PropTypes.node,
     top: PropTypes.number,
     left: PropTypes.number,
-    lightBlue: PropTypes.string
+    lightBlue: PropTypes.string,
+    rotate: PropTypes.number,
+    width: PropTypes.string
 }
 
 BackgroundBlock.defaultProps = {
     children: null,
     top: 50,
-    left: 50
+    left: 50,
+    rotate: 60,
+    width: '1300px',
 }
 
 export default  function BackgroundBlock({
-    lightBlue, top, left
+    lightBlue, top, left, rotate, width
 }) {
 
   return (
-    <BackgroundBlockStyle left={left} top={top} lightBlue={lightBlue}>
+    <BackgroundBlockStyle width={width} rotate={rotate} left={left} top={top} lightBlue={lightBlue}>
     </BackgroundBlockStyle>
   );
 }

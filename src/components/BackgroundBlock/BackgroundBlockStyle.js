@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 const BackgroundBlockStyle = styled.div`
-    width: 1300px;
+    width: ${props => props.width};
     height: 2500px;
     background-color: #4A83FF;
     border-radius: 300px;
-    transform: rotate(60deg);
+    transform: rotate(${props => props.rotate}deg);
     top: ${props => props.top}px;
     left: ${props => props.left}px;
     position: absolute;

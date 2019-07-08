@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {  Link } from 'react-router-dom'
 
 
 import { HeaderStyle, HeaderLogoStyle, HeaderItemStyle, HeaderItemsStyle } from './HeaderStyle.js'
@@ -8,6 +7,8 @@ import { HeaderStyle, HeaderLogoStyle, HeaderItemStyle, HeaderItemsStyle } from 
 import Logo from '../../assets/mentorium-logo.png'
 import Text from '../Text/Text'
 import Container from '../Container/Container'
+import Link from '../Link/Link'
+
 
 
 
@@ -41,10 +42,6 @@ function Header({
             title: 'Курсы',
             to: '/courses',
         },
-        {
-            title: 'Начать',
-            to: '/community',
-        }
     ]
 
   return (
@@ -57,14 +54,23 @@ function Header({
             {headerItems.map(item => {
                     return (
                         <HeaderItemStyle>
-                            <Link to={`${item.to}`}>
-                                <Text inverted nowrap > 
+                            <Link withLine inverted nowrap to={`${item.to}`}>
                                 {item.title} 
-                                </Text>
                             </Link>
                         </HeaderItemStyle>
                     )
+                    
             })}
+            <HeaderItemStyle>
+                <Link inverted nowrap to={'/sign-in'}>
+                    Войти
+                </Link>
+            </HeaderItemStyle>
+            <HeaderItemStyle>
+                <Link primary nowrap to={'/sign-up'}>
+                    Начать 
+                </Link>
+            </HeaderItemStyle>
         </HeaderItemsStyle>
     </HeaderStyle>
   );

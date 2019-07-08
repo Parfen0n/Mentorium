@@ -31,6 +31,13 @@ const ButtonStyle = styled.div`
         color: white;
         `
     }
+
+    ${props => props.big &&
+        `
+        width: 100%;
+        height: 50px;
+        `
+    }
 `
 
 export default ButtonStyle;

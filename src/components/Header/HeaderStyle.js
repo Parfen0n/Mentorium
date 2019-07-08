@@ -5,6 +5,7 @@ export const HeaderStyle = styled.div`
     flex-direction: row;
     padding: 5px 80px 5px 80px;
     align-items: center;
+    text-align: center;
     width: 100%;
     justify-content: space-between;
 `
@@ -18,6 +19,7 @@ export const HeaderLogoStyle = styled.img`
 export const HeaderItemsStyle = styled.div`
     display: flex;
     flex-direction: row;
+    height: 30px;
 `
 
 export const HeaderItemStyle = styled.div`
