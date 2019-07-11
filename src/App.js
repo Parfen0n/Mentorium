@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import Menu from "./components/Menu/Menu"
 
 import Home from './pages/Home/Home.js';
+import SignUp from './pages/SignUp/SignUp';
+
 
 import  AppStyle from './AppStyle.js';
 
@@ -19,6 +21,7 @@ function App() {
       <AppStyle>
         <Router>
           <Route path="/home" component={Home} />
+          <Route path="/sign-up" component={SignUp} />
         </Router>
       </AppStyle>
 

@@ -4,6 +4,7 @@ const LinkStyle = styled.p`
     color: #4A83FF;
     font-size: 18px;
     line-height: 27px;
+    margin-left: 3px;
     :hover {
         border-bottom: 2px solid #4A83FF;
     }

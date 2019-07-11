@@ -134,7 +134,7 @@ export default class Home extends Component {
                                     <Text large bold>
                                         Присоединяйтесь!
                                     </Text>
-                                    <Container width='40%' justifyContent='space-around'>
+                                    <Container width='40%' height='30px'>
                                         <Text nowrap secondary>
                                             Уже есть аккаунт?
                                         </Text>
