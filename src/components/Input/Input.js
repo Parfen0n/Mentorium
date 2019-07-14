@@ -9,14 +9,15 @@ Input.propTypes = {
 }
 
 Input.defaultProps = {
+  onChange: () => {}
 }
 
 export default function Input({
-    type, placeholder
+    type, placeholder, onChange
 }) {
 
   return (
-    <InputStyle type={type} placeholder={placeholder}>
+    <InputStyle onChange={onChange} type={type} placeholder={placeholder}>
     </InputStyle>
   );
 }

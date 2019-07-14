@@ -8,6 +8,7 @@ BackgroundBlock.propTypes = {
     top: PropTypes.number,
     left: PropTypes.number,
     lightBlue: PropTypes.string,
+    yellow: PropTypes.string,
     rotate: PropTypes.number,
     width: PropTypes.string
 }
@@ -21,11 +22,11 @@ BackgroundBlock.defaultProps = {
 }
 
 export default  function BackgroundBlock({
-    lightBlue, top, left, rotate, width
+    lightBlue, top, left, rotate, width, yellow
 }) {
 
   return (
-    <BackgroundBlockStyle width={width} rotate={rotate} left={left} top={top} lightBlue={lightBlue}>
+    <BackgroundBlockStyle yellow={yellow} width={width} rotate={rotate} left={left} top={top} lightBlue={lightBlue}>
     </BackgroundBlockStyle>
   );
 }

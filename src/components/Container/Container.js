@@ -11,7 +11,11 @@ Container.propTypes = {
   padding: PropTypes.array,
   align: PropTypes.string,
   justifyContent: PropTypes.string,
-  direction: PropTypes.string
+  direction: PropTypes.string,
+  position: PropTypes.string,
+  top: PropTypes.number,
+  left: PropTypes.number,
+  zIndex: PropTypes.number
 }
 
 Container.defaultProps = {
@@ -21,7 +25,7 @@ Container.defaultProps = {
 }
 
 function Container({
-    children, margin, padding, direction, justifyContent, align, width, height
+    children, margin, padding, direction, justifyContent, align, width, height, position, top, left, zIndex
 }) {
 
   return (
@@ -31,7 +35,11 @@ function Container({
                       height={height} 
                       justifyContent={justifyContent} 
                       padding={padding} 
-                      margin={margin}>
+                      margin={margin}
+                      position={position}
+                      top={top}
+                      left={left}
+                      zIndex={zIndex}>
         { children }
     </ContainerStyle>
   );

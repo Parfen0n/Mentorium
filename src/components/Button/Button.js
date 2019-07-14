@@ -7,19 +7,19 @@ Button.propTypes = {
     children: PropTypes.node,
     primary: PropTypes.bool, 
     big: PropTypes.bool, 
-
 }
 
 Button.defaultProps = {
     children: null,
+    onClick: () => {}
 }
 
 export default  function Button({
-    children, primary, big
+    children, primary, big, onClick
 }) {
 
   return (
-    <ButtonStyle primary={primary} big={big}>
+    <ButtonStyle onClick={onClick} primary={primary} big={big}>
         { children }
     </ButtonStyle>
   );

@@ -5,6 +5,8 @@ import Menu from "./components/Menu/Menu"
 
 import Home from './pages/Home/Home.js';
 import SignUp from './pages/SignUp/SignUp';
+import SignIn from './pages/SignIn/SignIn';
+
 
 
 import  AppStyle from './AppStyle.js';
@@ -20,8 +22,9 @@ function App() {
     <>          
       <AppStyle>
         <Router>
-          <Route path="/home" component={Home} />
+          <Route path="/" exact component={Home} />
           <Route path="/sign-up" component={SignUp} />
+          <Route path="/sign-in" component={SignIn} />
         </Router>
       </AppStyle>
 

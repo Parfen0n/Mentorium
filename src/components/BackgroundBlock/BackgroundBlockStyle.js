@@ -15,6 +15,12 @@ const BackgroundBlockStyle = styled.div`
         background-color: #6395FF;
         `
     }
+
+    ${props => props.yellow &&
+        `
+        background-color: #FFCA4F;
+        `
+    }
 `
 
 export default BackgroundBlockStyle;

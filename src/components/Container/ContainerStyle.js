@@ -18,6 +18,31 @@ const ContainerStyle = styled.div`
         padding: ${props.padding[0]} ${props.padding[1]} ${props.padding[2]} ${props.padding[3]}
         ` 
     }
+    ${props => props.position &&
+        `
+        position: ${props.position};
+        `
+    }
+
+    ${props => props.top &&
+        `
+        top: ${props.top};
+
+        `
+    }
+
+    ${props => props.left &&
+        `
+        left: ${props.left};
+
+        `
+    }
+
+    ${props => props.zIndex &&
+        `
+        z-index: ${props.zIndex}
+        `
+    }
 `
 
 export default ContainerStyle;
