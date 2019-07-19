@@ -6,7 +6,8 @@ const ContainerStyle = styled.div`
     justify-content: ${props => props.justifyContent};
     align-items: ${props => props.align};
     width: ${props => props.width ? `${props.width}` : 'auto'};
-    height: ${props => props.height ? `${props.height}` : 'auto'}
+    height: ${props => props.height ? `${props.height}` : 'auto'};
+    border-radius: ${props => props.borderRadius};
     ${props => props.margin &&
         `
         margin: ${props.margin[0]} ${props.margin[1]} ${props.margin[2]} ${props.margin[3]}

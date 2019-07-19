@@ -11,7 +11,6 @@ import Image from '../../components/Image/Image';
 import SignUpImage from '../../assets/sign-up.png'
 
 import SignUpModel  from './SignUpModel.js';
-import { signUp } from '../../api/auth.js';
 
 
 
@@ -42,7 +41,7 @@ export default class SignUp extends Component {
                             <Input onChange={(e) => SignUpModel.set("password", e.target.value)} type='password' placeholder='Пароль' />
                             <Input onChange={(e) => SignUpModel.set("email", e.target.value)}  type='text' placeholder='E-mail' />
                             <Container width='100%' direction='column' align='center' padding={['20px', 0, 0, 0]}>
-                                <Button onClick={() => signUp()} big primary>
+                                <Button big primary>
                                     Зарегистрироваться
                                 </Button>
                             </Container>

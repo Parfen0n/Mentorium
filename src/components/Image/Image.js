@@ -6,7 +6,8 @@ import ImageStyle from './ImageStyle.js'
 Image.propTypes = {
 	children: PropTypes.node,
     size: PropTypes.string,
-    src: PropTypes.string
+    src: PropTypes.string,
+    borderRadius: PropTypes.string
 }
 
 Image.defaultProps = {
@@ -14,11 +15,11 @@ Image.defaultProps = {
 }
 
 function Image({
-    children, size, src
+    children, size, src, borderRadius
 }) {
 
   return (
-    <ImageStyle src={src} size={size}>
+    <ImageStyle src={src} size={size} borderRadius={borderRadius}>
         { children }
     </ImageStyle>
   );

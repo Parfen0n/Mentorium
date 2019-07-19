@@ -6,6 +6,8 @@ import Menu from "./components/Menu/Menu"
 import Home from './pages/Home/Home.js';
 import SignUp from './pages/SignUp/SignUp';
 import SignIn from './pages/SignIn/SignIn';
+import Universities from './pages/Universities/Universities';
+
 
 
 
@@ -25,6 +27,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/sign-up" component={SignUp} />
           <Route path="/sign-in" component={SignIn} />
+          <Route path="/universities" component={Universities} />
         </Router>
       </AppStyle>
 

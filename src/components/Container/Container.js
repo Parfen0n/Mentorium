@@ -15,7 +15,8 @@ Container.propTypes = {
   position: PropTypes.string,
   top: PropTypes.number,
   left: PropTypes.number,
-  zIndex: PropTypes.number
+  zIndex: PropTypes.number,
+  borderRadius: PropTypes.string
 }
 
 Container.defaultProps = {
@@ -25,21 +26,22 @@ Container.defaultProps = {
 }
 
 function Container({
-    children, margin, padding, direction, justifyContent, align, width, height, position, top, left, zIndex
+    children, margin, padding, direction, justifyContent, align, width, height, position, top, left, zIndex, borderRadius
 }) {
 
   return (
-      <ContainerStyle direction={direction} 
+      <ContainerStyle direction={direction}
                       align={align} 
-                      width={width} 
-                      height={height} 
-                      justifyContent={justifyContent} 
-                      padding={padding} 
+                      width={width}
+                      height={height}
+                      justifyContent={justifyContent}
+                      padding={padding}
                       margin={margin}
                       position={position}
                       top={top}
                       left={left}
-                      zIndex={zIndex}>
+                      zIndex={zIndex}
+                      borderRadius={borderRadius}>
         { children }
     </ContainerStyle>
   );

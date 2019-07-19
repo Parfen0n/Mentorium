@@ -36,7 +36,7 @@ function Header({
         },
         {
             title: 'Вузы',
-            to: '/choose_university',
+            to: '/universities',
         },
         {
             title: 'Курсы',

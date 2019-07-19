@@ -5,7 +5,9 @@ import InputStyle from './InputStyle.js'
 
 Input.propTypes = {
     type: PropTypes.string,
-    placeholder: PropTypes.string
+    placeholder: PropTypes.string,
+    small: PropTypes.bool,
+    blue: PropTypes.bool
 }
 
 Input.defaultProps = {
@@ -13,11 +15,11 @@ Input.defaultProps = {
 }
 
 export default function Input({
-    type, placeholder, onChange
+    type, placeholder, small, onChange, blue
 }) {
 
   return (
-    <InputStyle onChange={onChange} type={type} placeholder={placeholder}>
+    <InputStyle blue={blue} small={small} onChange={onChange} type={type} placeholder={placeholder}>
     </InputStyle>
   );
 }

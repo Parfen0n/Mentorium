@@ -13,11 +13,28 @@ const InputStyle = styled.input`
     outline: none;
     transition: all 0.5s;
 
+    
     :focus {
         border: 1px solid  #FFB42E;
         box-shadow: 0px 0px 20px -15px rgba(255,180,46,1);
-
     }
+
+    ${props => props.small &&
+        `
+        border-radius: 25px;
+        padding: 13px;
+        font-size: 18px;
+        `
+    }
+
+    ${props => props.blue &&
+        `
+        :focus {
+            border: 1px solid  #224FB3;
+        }
+        `
+    } 
+
 `
 
 export default InputStyle;
