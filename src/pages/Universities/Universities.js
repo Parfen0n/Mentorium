@@ -59,10 +59,11 @@ export default class Universities extends Component {
 
         return (
             <>
+
                 <BackgroundBlock top={-1900} left={1200}/>
                 <BackgroundBlock top={0} left={-200} lightBlue/>
                 <Header />
-                <Container direction='column' margin={['100px','10%', 0, '10%']}>
+                <Container direction='column' margin={['100px','10%', '800px', '10%']}>
                     <Container margin={[0, 0, 0, '20px']}>
                         <Text  bold large>
                             Вузы
@@ -87,6 +88,8 @@ export default class Universities extends Component {
                         </Container>
                     </Container>
                 </Container>
+                <Footer />
+
             </>
           );
     }

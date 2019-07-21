@@ -5,6 +5,8 @@ const AppStyle = styled.div`
     height: 100%;
     font-family: 'Comfortaa', sans-serif;
     overflow-x: hidden;
+    padding: 0;
+    margin: 0;
 `
 
 

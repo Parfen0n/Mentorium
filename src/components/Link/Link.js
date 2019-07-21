@@ -16,7 +16,7 @@ Link.propTypes = {
   inverted: PropTypes.bool,
   nowrap: PropTypes.bool,
   alignCenter: PropTypes.bool,
-  withLine: PropTypes.bool
+  withoutLine: PropTypes.bool
 }
 
 Link.defaultProps = {
@@ -24,7 +24,7 @@ Link.defaultProps = {
 }
 
 function Link({
-    children, small, big, large, primary,  bold, inverted, uppercase, nowrap, alignCenter, to, src, withLine
+    children, small, big, large, primary,  bold, inverted, uppercase, nowrap, alignCenter, to, src, withoutLine
 }) {
 
   return (
@@ -38,7 +38,7 @@ function Link({
                uppercase={uppercase}
                nowrap={nowrap}
                alignCenter={alignCenter}
-               withLine={withLine}>
+               withoutLine={withoutLine}>
          { children }    
         </LinkStyle>
       </LinkRouter>

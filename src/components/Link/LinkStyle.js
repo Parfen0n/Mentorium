@@ -6,7 +6,7 @@ const LinkStyle = styled.p`
     line-height: 27px;
     margin-left: 3px;
     :hover {
-        border-bottom: 2px solid #4A83FF;
+        border-bottom: ${props => !props.withoutLine ? `2px solid #4A83FF` : 'none'}
     }
 
     ${props => props.big &&
@@ -73,6 +73,7 @@ const LinkStyle = styled.p`
             text-align: center;
         `
     }
+
 
 `
 

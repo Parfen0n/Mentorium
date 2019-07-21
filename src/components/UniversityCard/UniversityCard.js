@@ -32,10 +32,10 @@ function UniversityCard({
         <Card>
             <Container direction='column 'width='100%' height='300px'>
                 <Container width='100%'  direction='row' height='100%'>
-                  <Container  width='30%'>
-                    <Image borderRadius='30px' src={UniversityImage} size='300px' />
+                  <Container  width='27%'>
+                    <Image borderRadius='30px' src={UniversityImage} width='97%' />
                   </Container>
-                  <Container direction='column' width='100%'>
+                  <Container margin={['10px', 0, 0, 0]} direction='column' width='100%'>
                     <Container align='center'>
                         <Text big bold>Казахстанско-Британский технический университет</Text>
                     </Container>
@@ -44,13 +44,13 @@ function UniversityCard({
                     </Container>
                       
                       <Container direction='row'>
-                          <Container width='50%' margin={[0, '10px', 0, 0]}>
+                          <Container width='50%' margin={[0, '0px', 0, 0]}>
                             <Text big>
                               Казахстанско-Британский технический универ - один из лучших технических вузов Республики на протяжении последних лет.
                             </Text>
                             <Divider vertical/>
                           </Container>
-                          <Container direction='column' width='49%'>
+                          <Container align='center' direction='column' width='49%'>
                             <Container direction='row'>
                                 <Text large>
                                   ЕНТ:
@@ -69,7 +69,9 @@ function UniversityCard({
                               <Text large bold>&nbsp;-</Text>
                             </Container> 
                             <Container margin={['20px', 0, 0, '70%']}>
+                            <Link inverted to='/university'>
                               <Button primary>Подробнее</Button>
+                            </Link>
                             </Container>
                           </Container>
                       </Container>

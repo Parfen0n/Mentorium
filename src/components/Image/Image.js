@@ -7,7 +7,10 @@ Image.propTypes = {
 	children: PropTypes.node,
     size: PropTypes.string,
     src: PropTypes.string,
-    borderRadius: PropTypes.string
+    borderRadius: PropTypes.string,
+    width: PropTypes.string,
+    height: PropTypes.string,
+    withFilter: PropTypes.bool
 }
 
 Image.defaultProps = {
@@ -15,11 +18,11 @@ Image.defaultProps = {
 }
 
 function Image({
-    children, size, src, borderRadius
+    children, size, src, borderRadius, width, height, withFilter
 }) {
 
   return (
-    <ImageStyle src={src} size={size} borderRadius={borderRadius}>
+    <ImageStyle withFilter={withFilter} height={height} width={width} src={src} size={size} borderRadius={borderRadius}>
         { children }
     </ImageStyle>
   );
