@@ -24,10 +24,9 @@ import { getUniversities } from "../../api/api.js";
 import Logo from '../../assets/mentorium-logo.png'
 import UniversityImg from '../../assets/university.jpg'
 import CheckImg from '../../assets/check.png'
+import HistoryImg from '../../assets/history.png'
 import PartyImg from '../../assets/party.png'
 import ContainerStyle from '../../components/Container/ContainerStyle.js';
-
-
 
 
 
@@ -155,24 +154,64 @@ export default class University extends Component {
                         </Container>
                     </Container>
                 </Container>
-                <Container direction='column' margin={['250px', 0, 0, '100px']} justifyContent='space-around' height='650px' width='40%'>
-                        <Text bold>
-                            Казахстанско-Британский технический универ - один из лучших технических вузов Республики на протяжении последних лет.
-                        </Text>
-                        <Container margin={[0, 0, 0, '100px']}>
-                            <Text secondary>
-                             По инициативе ПП, в ноябре 2000 года было создано АО «Казахстанско-Британский технический университет». В ходе официального визита Президента Республики Казахстан Н.А.Назарбаева в Соединенное Королевство Великобритании и Северной Ирландии. Сам универ был основан 3 августа 2001 года.
+                <Container direction='row' justifyContent='space-around'>
+                    <Container direction='column' margin={['250px', 0, 0, '100px']} justifyContent='space-around' height='650px' width='40%'>
+                            <Text bold>
+                                Казахстанско-Британский технический универ - один из лучших технических вузов Республики на протяжении последних лет.
                             </Text>
-                        </Container>
-                        <Text>
-                        Главной целью КБТУ является - поддерживать научное, промышленное и экономическое развитие Казахстана, выпуская высококвалифицированных специалистов. 98% процентов студентов КБТУ находят работу вскоре после окончания университета или продолжают обучение. Некоторые из них приглашаются компаниями еще во время учебы. Немало выпускников которые работают в ведущих международных компаниях IT и нефтегазовой отраслей, в том числе, в Силиконовой долине.
-                        </Text>
-                        <Container margin={[0, 0, 0, '100px']}>
-                            <Text secondary>
-                                КБТУ гордится высококвалифицированными преподавателями, в числе которых есть известные ученые. КБТУ располагает современными научными лабораториями, где исследователи и студенты работают над инновационными проектами.
+                            <Container margin={[0, 0, 0, '100px']}>
+                                <Text secondary>
+                                По инициативе ПП, в ноябре 2000 года было создано АО «Казахстанско-Британский технический университет». В ходе официального визита Президента Республики Казахстан Н.А.Назарбаева в Соединенное Королевство Великобритании и Северной Ирландии. Сам универ был основан 3 августа 2001 года.
+                                </Text>
+                            </Container>
+                            <Text>
+                            Главной целью КБТУ является - поддерживать научное, промышленное и экономическое развитие Казахстана, выпуская высококвалифицированных специалистов. 98% процентов студентов КБТУ находят работу вскоре после окончания университета или продолжают обучение. Некоторые из них приглашаются компаниями еще во время учебы. Немало выпускников которые работают в ведущих международных компаниях IT и нефтегазовой отраслей, в том числе, в Силиконовой долине.
                             </Text>
-                        </Container>
+                            <Container margin={[0, 0, 0, '100px']}>
+                                <Text secondary>
+                                    КБТУ гордится высококвалифицированными преподавателями, в числе которых есть известные ученые. КБТУ располагает современными научными лабораториями, где исследователи и студенты работают над инновационными проектами.
+                                </Text>
+                            </Container>
+                    </Container>
+                    <Container width='50%' margin={['250px', 0, 0, '100px']}>
+                        <Image src={HistoryImg} width='90%'/>
+                    </Container>
                 </Container>
+                <Container margin={['250px', 'auto', 0, 'auto']} justifyContent='center' width='60%'>
+                    <Card>
+                        <Container  align='center'  padding={[0, '40px', 0, '40px']} height='90px' width='100%' >
+                            <Container width='80%'>
+                                    <Text bold>Мы можем помочь тебе с поступлением в Казахстанско-Британский технический университет</Text>
+                            </Container>
+                            <Container padding={[0, 0, 0, '30px']} width='20%'>
+                                        <Button primary>Подробнее</Button>
+                            </Container>
+                        </Container>
+                    </Card>
+                </Container>
+                <Container margin={['250px', 'auto', 0, 'auto']} height='400px' align='center' justifyContent='space-around' direction='column' width='80%'>
+                    <Text big bold>Может заинтересовать</Text>
+                    <Container justifyContent='space-around' width='100%' direction='row'>
+                            <Container width='27%'  height='300px'>
+                                <Card>
+                                    <Container>
+                                    </Container>
+                                </Card>
+                            </Container>
+                            <Container width='27%'  height='300px'>
+                                <Card>
+                                    <Container>
+                                    </Container>
+                                </Card>
+                            </Container>
+                            <Container width='27%'  height='300px'>
+                                <Card>
+                                    <Container >
+                                    </Container>
+                                </Card>
+                            </Container>
+                    </Container>
+                 </Container>
                 </>
           );
     }
