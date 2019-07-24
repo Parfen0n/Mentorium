@@ -15,7 +15,7 @@ const ButtonStyle = styled.div`
     min-width: 50px;
     max-width: 300px;
     cursor: pointer;
-    margin: 8px;
+    margin-right: 20px;
     will-change: transform, box-shadow;
     transition: all 0.5s;
 
