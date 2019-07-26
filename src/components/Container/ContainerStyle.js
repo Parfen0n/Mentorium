@@ -32,6 +32,13 @@ const ContainerStyle = styled.div`
         `
     }
 
+    ${props => props.bottom &&
+        `
+        bottom: ${props.bottom};
+
+        `
+    }
+
     ${props => props.left &&
         `
         left: ${props.left};

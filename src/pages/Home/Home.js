@@ -299,7 +299,7 @@ export default class Home extends Component {
 
 
 
-                <Container justifyContent='space-around' padding={['100px', '100px', '500px', '100px']}>
+                <Container justifyContent='space-around' padding={['100px', '100px', '900px', '100px']}>
                     <Text big inverted>
                         Читайте также
                     </Text>

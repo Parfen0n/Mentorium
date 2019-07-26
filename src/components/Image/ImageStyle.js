@@ -12,6 +12,12 @@ const ImageStyle = styled.img`
         filter: brightness(35%);
         `
     }
+
+    ${props => props.withBrightFilter &&
+        `
+        filter: brightness(650%);
+        `
+    }
     padding: 0 auto;
 `
 
