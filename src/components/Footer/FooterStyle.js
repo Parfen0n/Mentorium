@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const FooterStyle = styled.div`
     width: 100%;
-    height: 300px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     padding-top: 4%;
@@ -13,7 +13,7 @@ export const FooterStyle = styled.div`
 
 export const InnerFooterStyle = styled.div`
     width: 100%;
-    height: 250px;
+    height: 200px;
     background-color:  #4A83FF;
     border-top-left-radius: 70px;
     border-top-right-radius: 70px;

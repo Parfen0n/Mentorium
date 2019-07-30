@@ -34,7 +34,8 @@ function Text({
                inverted={inverted}
                uppercase={uppercase}
                nowrap={nowrap}
-               alignCenter={alignCenter}>
+               alignCenter={alignCenter}
+               >
         { children }
     </TextStyle>
   );

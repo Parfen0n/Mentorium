@@ -5,6 +5,7 @@ import CardStyle from './CardStyle.js'
 
 Card.propTypes = {
     children: PropTypes.node,
+    forArticle: PropTypes.bool
 }
 
 Card.defaultProps = {
@@ -12,11 +13,11 @@ Card.defaultProps = {
 }
 
 export default function Card({
-    children
+    children, forArticle
 }) {
 
   return (
-    <CardStyle >
+    <CardStyle forArticle={forArticle}>
         { children }
     </CardStyle>
   );

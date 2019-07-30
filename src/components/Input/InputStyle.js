@@ -6,7 +6,7 @@ const InputStyle = styled.input`
     background: #FFFFFF;
     box-sizing: border-box;
     border-radius: 30px;
-    width: 100%;
+    min-width: 400px;
     padding: 17px;
     font-family: 'Comfortaa', sans-serif;
     font-size: 18px;

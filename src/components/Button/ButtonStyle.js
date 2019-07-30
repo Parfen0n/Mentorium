@@ -1,21 +1,19 @@
 import styled from 'styled-components'
 
 const ButtonStyle = styled.div`
-    height: 37px;
-    background-color: #224FB3;
+    height: 37px;    
     padding: 0 20px 0 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-weight: bold;
-    color: #fff;
+    font-weight: bold;    
     border-radius: 35px;
     font-size: 18px;
     justify-content: center;
     min-width: 50px;
     max-width: 300px;
     cursor: pointer;
-    margin-right: 20px;
+    
     will-change: transform, box-shadow;
     transition: all 0.5s;
 
@@ -29,12 +27,21 @@ const ButtonStyle = styled.div`
         `
         background-color: #FFB42E;
         color: white;
+        margin-right: 0;
+        `
+    }
+
+    ${props => props.secondary &&
+        `
+        background-color: #224FB3;
+        color: #fff;
+        margin-left: 20px;
         `
     }
 
     ${props => props.big &&
         `
-        width: 100%;
+        min-width: 400px;
         height: 50px;
         `
     }

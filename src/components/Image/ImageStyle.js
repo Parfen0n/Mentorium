@@ -18,6 +18,21 @@ const ImageStyle = styled.img`
         filter: brightness(650%);
         `
     }
+
+    ${props => props.forArticle &&
+        `
+        height:100%;
+        width:100%;
+        position: relative;
+        border-radius: 30px;
+        top:0;
+        left:0;
+        z-index:-1;
+        transition: all 0.4s ease-out;
+        filter: brightness(80%);
+        `
+    }
+
     padding: 0 auto;
 `
 

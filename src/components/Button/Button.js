@@ -6,6 +6,7 @@ import ButtonStyle from './ButtonStyle.js'
 Button.propTypes = {
     children: PropTypes.node,
     primary: PropTypes.bool, 
+    secondary: PropTypes.bool,
     big: PropTypes.bool, 
 }
 
@@ -15,11 +16,11 @@ Button.defaultProps = {
 }
 
 export default  function Button({
-    children, primary, big, onClick
+    children, primary, secondary, big, onClick
 }) {
 
   return (
-    <ButtonStyle onClick={onClick} primary={primary} big={big}>
+    <ButtonStyle onClick={onClick} primary={primary} big={big} secondary={secondary}>
         { children }
     </ButtonStyle>
   );

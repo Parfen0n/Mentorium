@@ -11,7 +11,8 @@ Image.propTypes = {
     width: PropTypes.string,
     height: PropTypes.string,
     withFilter: PropTypes.bool,
-    withBrightFilter: PropTypes.bool
+    withBrightFilter: PropTypes.bool,
+    forArticle: PropTypes.bool
 }
 
 Image.defaultProps = {
@@ -19,11 +20,11 @@ Image.defaultProps = {
 }
 
 function Image({
-    children, size, src, borderRadius, width, height, withFilter, withBrightFilter
+    children, size, src, borderRadius, width, height, withFilter, withBrightFilter, forArticle
 }) {
 
   return (
-    <ImageStyle withFilter={withFilter} withBrightFilter={withBrightFilter} height={height} width={width} src={src} size={size} borderRadius={borderRadius}>
+    <ImageStyle withFilter={withFilter} withBrightFilter={withBrightFilter} forArticle={forArticle} height={height} width={width} src={src} size={size} borderRadius={borderRadius}>
         { children }
     </ImageStyle>
   );

@@ -8,6 +8,7 @@ const ContainerStyle = styled.div`
     width: ${props => props.width ? `${props.width}` : 'auto'};
     height: ${props => props.height ? `${props.height}` : 'auto'};
     border-radius: ${props => props.borderRadius};
+    background-color: ${props => props.backgroundColor};
     ${props => props.margin &&
         `
         margin: ${props.margin[0]} ${props.margin[1]} ${props.margin[2]} ${props.margin[3]}
@@ -49,6 +50,12 @@ const ContainerStyle = styled.div`
     ${props => props.zIndex &&
         `
         z-index: ${props.zIndex}
+        `
+    }
+    
+    ${props => props.verticalAlign &&
+        `
+        vertical-align: middle;
         `
     }
 `
