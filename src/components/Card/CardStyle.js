@@ -6,14 +6,6 @@ const CardStyle = styled.div`
     border-radius: 30px;
     padding: 7px;
     width: 100%;
-
-    ${props => props.forArticle &&
-    `
-        padding: 0px;
-        z-index: -2;
-        
-    `
-    }
 `
 
 export default CardStyle;

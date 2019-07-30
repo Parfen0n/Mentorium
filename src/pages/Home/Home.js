@@ -24,7 +24,6 @@ import NavigationSupport from '../../assets/marginalia-navigation-support.png'
 import Done from '../../assets/marginalia-done.png'
 
 import Divider from '../../components/Divider/Divider';
-import CardUI from '../../components/CardUI/CardUI';
 
 
 
@@ -50,7 +49,7 @@ export default class Home extends Component {
                         <Button primary>
                             Выбрать профессию
                         </Button>
-                        <Button secondary>
+                        <Button>
                             Выбрать ВУЗ
                         </Button>
                     </Container>
@@ -172,7 +171,7 @@ export default class Home extends Component {
                         <Image height='550px' src={SignUpImg} />
                     </Container>
                     <Container width='50%'>
-                        <Container width='90%' height='470px'>
+                        <Container width='100%' height='470px'>
                             <Card>
                                 <Container margin={['30px', 0, 0, 0]} direction='column' align='center'>
                                     <Text large bold>
@@ -186,7 +185,7 @@ export default class Home extends Component {
                                             Войти
                                         </Link>
                                     </Container>
-                                    <Container direction='column' padding={['20px', '10%', 0, '10%']}>
+                                    <Container width='100%' direction='column' padding={['20px', '10%', 0, '10%']}>
                                         <Input type='text' placeholder='Имя' />
                                         <Input type='password' placeholder='Пароль' />
                                         <Input type='text' placeholder='E-mail' />
@@ -243,15 +242,15 @@ export default class Home extends Component {
                                         </Container>                                    
                                 </Container>
                                 <Container width='70%'>
-                                    <Divider/>
+                                    <Divider></Divider>
                                 </Container>
-                                <Container margin={['30px', '0', '0', '0']} position='row'>
-                                        <Container width='50%' position='column'>
+                                <Container margin={['30px', '0', '0', '0']}>
+                                        <Container width='50%'>
                                         <Text bold>
                                             Интересно? Тогда, предлагаем Вам пройти комплекс профориентационных тестов
                                         </Text>
                                         </Container>
-                                        <Container margin={['5px', 0, 0, 0]} width='20%' position='column' justifyContent='flex-end'>
+                                        <Container margin={['5px', 0, 0, '30px']}>
                                         <Button primary>
                                             Пройти тест
                                         </Button>
@@ -280,15 +279,15 @@ export default class Home extends Component {
                                 
                                 
                                 <Container width='100%'>
-                                    <Divider/>
+                                    <Divider></Divider>
                                 </Container>
                                 <Container margin={['30px', '0', '0', '0']}>
-                                        <Container width='80%'>
+                                        <Container width='100%'>
                                         <Text bold>
                                             Не упустите совй шанс проконсультироваться у профессионала!
                                         </Text>
                                         </Container>
-                                        <Container width='20%' justifyContent='flex-end'>
+                                        <Container margin={['5px', 0, 0, '150px']}>
                                         <Button primary>
                                             Записаться
                                         </Button>
@@ -300,15 +299,10 @@ export default class Home extends Component {
 
 
 
-                <Container justifyContent='center'>
+                <Container justifyContent='space-around' padding={['100px', '100px', '900px', '100px']}>
                     <Text big inverted>
                         Читайте также
                     </Text>
-                </Container>
-                <Container padding={['100px', '100px', '800px', '100px']} justifyContent='space-between'>
-                    <CardUI/>
-                    <CardUI/>
-                    <CardUI/>
                 </Container>
                 <Footer />
             </>

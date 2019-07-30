@@ -47,18 +47,6 @@ const LinkStyle = styled.p`
         `
     }
 
-    ${props => props.noUnderline &&
-        `
-        color: #fff;
-        display: inline;
-        opacity: 0.8;
-        :hover {
-            border-bottom: none;
-            opacity: 1;
-        }
-        `
-    }
-
     ${props => props.inverted &&
         `
         color:  #fff;

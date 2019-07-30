@@ -19,11 +19,10 @@ export default class SignUp extends Component {
     render () {
         return (
             <>
-                <BackgroundBlock lightBlue width='800px' rotate={45} top={-195} left={-800}/>
-                <BackgroundBlock width='200px' rotate={45} top={40} left={550}/>
+                <BackgroundBlock width='950px' rotate={45} top={-50} left={-600}/>
                 <Container margin={[0, 0, 0, 0]} align='center'>
-                    <Container width='50%' direction='column' padding={['8%', '0', 0, '0']} margin={[0, 0, 0, '-100px']}>
-                        <Image height='550' src={SignUpImage} />
+                    <Container width='50%' direction='column' padding={['8%', '0', 0, '0']}>
+                        <Image size='100%' src={SignUpImage} />
                     </Container>
                     <Container width='50%' align='center' direction='column' padding={['50px', '10%', 0, '10%']}>
                         <Text large bold>
@@ -37,7 +36,7 @@ export default class SignUp extends Component {
                                     Войти
                                 </Link>
                         </Container>
-                        <Container direction='column' padding={['0', '10%', 0, '10%']} align='center'>
+                        <Container width='100%' direction='column' padding={['0', '10%', 0, '10%']}>
                             <Input onChange={(e) => SignUpModel.set("username", e.target.value)} type='text' placeholder='Имя' />
                             <Input onChange={(e) => SignUpModel.set("password", e.target.value)} type='password' placeholder='Пароль' />
                             <Input onChange={(e) => SignUpModel.set("email", e.target.value)}  type='text' placeholder='E-mail' />
