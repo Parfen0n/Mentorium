@@ -13,7 +13,8 @@ Text.propTypes = {
   bold: PropTypes.bool, 
   inverted: PropTypes.bool,
   nowrap: PropTypes.bool,
-  alignCenter: PropTypes.bool
+  alignCenter: PropTypes.bool,
+  verticalAlign: PropTypes.bool
 }
 
 Text.defaultProps = {
@@ -21,7 +22,7 @@ Text.defaultProps = {
 }
 
 function Text({
-    children, small, big, large, primary, secondary, bold, inverted, uppercase, nowrap, alignCenter
+    children, small, big, large, primary, secondary, bold, inverted, uppercase, nowrap, alignCenter, verticalAlign
 }) {
 
   return (
@@ -34,7 +35,8 @@ function Text({
                inverted={inverted}
                uppercase={uppercase}
                nowrap={nowrap}
-               alignCenter={alignCenter}>
+               alignCenter={alignCenter}
+               verticalAlign={verticalAlign}>
         { children }
     </TextStyle>
   );

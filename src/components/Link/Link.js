@@ -15,7 +15,7 @@ Link.propTypes = {
   bold: PropTypes.bool, 
   inverted: PropTypes.bool,
   nowrap: PropTypes.bool,
-  alignCenter: PropTypes.bool,
+  navBar: PropTypes.bool,
   withoutLine: PropTypes.bool
 }
 
@@ -24,7 +24,7 @@ Link.defaultProps = {
 }
 
 function Link({
-    children, small, big, large, primary,  bold, inverted, uppercase, nowrap, alignCenter, to, src, withoutLine
+    children, small, big, large, primary,  bold, inverted, uppercase, nowrap, navBar, to, src, withoutLine
 }) {
 
   return (
@@ -37,7 +37,7 @@ function Link({
                inverted={inverted}
                uppercase={uppercase}
                nowrap={nowrap}
-               alignCenter={alignCenter}
+               navBar={navBar}
                withoutLine={withoutLine}>
          { children }    
         </LinkStyle>

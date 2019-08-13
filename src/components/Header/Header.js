@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-import { HeaderStyle, HeaderLogoStyle, HeaderItemStyle, HeaderItemsStyle } from './HeaderStyle.js'
+import { HeaderStyle, HeaderLogoStyle, HeaderItemsStyle, HeaderLogoItems, HeaderActiveLinksStyle, Hello } from './HeaderStyle.js'
 
 import Logo from '../../assets/mentorium-logo.png'
 import Text from '../Text/Text'
-import Container from '../Container/Container'
 import Link from '../Link/Link'
+import Button from '../Button/Button'
 
 
 
@@ -44,36 +44,44 @@ function Header({
         },
     ]
 
-  return (
-    <HeaderStyle>
-        <Container direction='row' align='center'>
-            <HeaderLogoStyle src={Logo} />
-            <Text>mentorium</Text>
-        </Container>
-        <HeaderItemsStyle>
-            {headerItems.map(item => {
+
+
+    return (
+        <Header>
+        <HeaderStyle>
+            <Button bar><i className = "fa fa-bars"></i></Button>
+            <HeaderLogoItems>
+                <HeaderLogoStyle src={Logo} />
+                <Text>mentorium</Text>
+            </HeaderLogoItems>
+            <Button bar><i className = "fa fa-user"></i></Button>
+            <HeaderItemsStyle>
+                {headerItems.map(item => {
                     return (
-                        <HeaderItemStyle>
-                            <Link withLine inverted nowrap to={`${item.to}`}>
-                                {item.title} 
-                            </Link>
-                        </HeaderItemStyle>
+
+                        <Link navBar to={`${item.to}`}>
+                            {item.title}
+                        </Link>
+    
                     )
-                    
-            })}
-            <HeaderItemStyle>
-                <Link inverted nowrap to={'/sign-in'}>
+
+                })}
+                { <HeaderActiveLinksStyle>
+                {/* <Link navBar inverted to={'/sign-in'}>
                     Войти
-                </Link>
-            </HeaderItemStyle>
-            <HeaderItemStyle>
+                </Link> */}
+
                 <Link primary nowrap to={'/sign-up'}>
-                    Начать 
+                    Начать
                 </Link>
-            </HeaderItemStyle>
-        </HeaderItemsStyle>
-    </HeaderStyle>
-  );
+                </HeaderActiveLinksStyle>}
+            </HeaderItemsStyle>
+            
+        </HeaderStyle>
+        <Hello></Hello>
+        </Header>
+        
+    );
 }
 
 export default Header;

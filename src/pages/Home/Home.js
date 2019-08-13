@@ -36,9 +36,9 @@ export default class Home extends Component {
         return (
             <>
                 <BackgroundBlock top={-100} left={-200} lightBlue/>
-                <BackgroundBlock top={-1100} left={1000}/>
+                <BackgroundBlock top={-1100} left={900}/>
                 <Header />
-                <Container direction='column' margin={['12%', 0, 0, '50%']}>
+                {/* <Container direction='column' margin={['12%', 0, 0, '50%']}>
                     <Text bold nowrap inverted large>Ваш путь к успешной карьере</Text>
                     <Container margin={['10px', '0', '0', '0']} width='650px'>
                         <Text inverted big>
@@ -49,11 +49,11 @@ export default class Home extends Component {
                         <Button primary>
                             Выбрать профессию
                         </Button>
-                        <Button>
+                        <Button secondary>
                             Выбрать ВУЗ
                         </Button>
                     </Container>
-                </Container>
+                </Container> */}
                 <Container justifyContent='space-around' padding={['250px', '100px', '50px', '100px']}>
                     <Container height='400px' width='30%'>
                         <Card>

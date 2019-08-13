@@ -67,6 +67,12 @@ const TextStyle = styled.p`
             text-align: center;
         `
     }
+
+    ${props => props.verticalAlign && 
+        `
+            align-content: center;
+        `
+    }
 `
 
 export default TextStyle;
